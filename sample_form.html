@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+        <meta content="utf-8" http-equiv="encoding">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" type="text/css" href="sample_form.css" />
+        <!--[if lt IE 9]>
+            <link rel="stylesheet" type="text/css" href="sample_form.css" />
+        <![endif]-->
+
+        <script type="text/javascript" src="sample_form.js"></script>
+    </head>
+    <body id="animoto-form-page">
+
+        <!-- sign up form -->
+        <form id="animoto-form" action="" enctype="multipart/form-data" method="post" target="_self">
+            <legend>Sign Up!</legend>
+
+            <!-- email input and label -->
+            <div>
+                <label for="email">
+                    Email:
+                </label>
+                <input placeholder="sample@email.com" id="email" name="email" class="email" type="text">
+
+                <!-- possible errors that could come up in validation -->
+                <div class="errors">
+                    <div class="empty">* Email address is required.</div>
+                    <div class="empty invalid">* Email address is not valid.</div>
+                </div>
+            </div>
+
+            <!-- password input and label -->
+            <div>
+                <label for="password">
+                    Password:
+                </label>
+                <input placeholder="password" id="password" name="password" class="password" type="text">
+
+                <!-- possible errors that could come up in validation -->
+                <div class="errors">
+                    <div class="empty">* Password is required.</div>
+                    <div class="empty spaces">* Please only enter one password.</div>
+                    <div class="empty lower">* Password must have at least one lowercase letter.</div>
+                    <div class="empty upper">* Password must have at least one uppercase letter.</div>
+                    <div class="empty digit">* Password must have one digit.</div>
+                </div>
+            </div>
+            <div>
+                <!-- button to submit form -->
+                <input type="submit" id="submit" class="whatthewhat" />
+            </div>
+        </form>
+
+    </body>
+</html>

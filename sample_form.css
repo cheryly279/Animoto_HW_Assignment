@@ -1,0 +1,27 @@
+body#animoto-form-page {
+    font-family: Arial;
+}
+
+/* center form horizontally and vertically */
+#animoto-form {
+    width: 250px;
+    height: 90px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* errors to display in red */
+.errors {
+    color: red;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+/* start with errors hidden */
+.errors div {
+    display: none;
+}
